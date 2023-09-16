@@ -1,0 +1,251 @@
+"use strict";
+//personal message
+var userName = "Hammad";
+var msg = "Hello Hammad";
+console.log(userName, "Personal Message;", msg);
+// Name Cases
+const personName = "john doe";
+const lowercaseName = personName.toLowerCase();
+const uppercaseName = personName.toUpperCase();
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+}
+const titleCaseName = toTitleCase(personName);
+console.log("Original Name: " + personName);
+console.log("Lowercase Name: " + lowercaseName);
+console.log("Uppercase Name: " + uppercaseName);
+console.log("Title Case Name: " + titleCaseName);
+//quote 
+var quote = "Imagination is more important than knowledge.";
+console.log("Albert einstein once said;", quote);
+// Quote from a famous person
+var famous_Person = "Albert Einstein";
+var quote = "Imagination is more important than knowledge.";
+console.log(famous_Person, "once said;", quote);
+//stripping names
+const personNameWithWhitespace1 = "\tJohn Doe\n";
+console.log("Name with Whitespace: '" + personNameWithWhitespace1 + "'");
+const cleanedPersonName1 = personNameWithWhitespace1.trim();
+console.log("Cleaned Name: '" + cleanedPersonName1 + "'");
+// Addition
+const additionResult = 5 + 3;
+console.log("Addition Result: " + additionResult);
+// Subtraction
+const subtractionResult = 10 - 2;
+console.log("Subtraction Result: " + subtractionResult);
+// Multiplication
+const multiplicationResult = 4 * 2;
+console.log("Multiplication Result: " + multiplicationResult);
+// Division
+const divisionResult = 16 / 2;
+console.log("Division Result: " + divisionResult);
+// number 8
+console.log(5 + 3);
+console.log(10 - 2);
+console.log(4 * 2);
+console.log(16 / 2);
+//9
+// Store your favorite number in a variable
+const favoriteNumber = 7;
+// Create a message to reveal your favorite number
+const message = `My favorite number is ${favoriteNumber}.`;
+// Print the message
+console.log(message);
+//10
+//program 1
+// This program calculates the area of a circle given its radius.
+// Define the radius of the circle
+const radius = 5;
+// Calculate the area of the circle using the formula A = π * r^2
+const pi = 3.14159;
+const area = pi * Math.pow(radius, 2);
+// Print the calculated area
+console.log(`The area of the circle with radius ${radius} is ${area}.`);
+// program 2
+// This program stores a person's name with whitespace, prints it with and without whitespace.
+// Store the person's name with whitespace
+const personNameWithWhitespace2 = "\tJohn Doe\n";
+// Print the name with whitespace
+console.log("Name with Whitespace: '" + personNameWithWhitespace2 + "'");
+// Strip the whitespace and print the cleaned name
+const cleanedPersonName2 = personNameWithWhitespace2.trim();
+console.log("Cleaned Name: '" + cleanedPersonName2 + "'");
+//11 Names in a array
+// Create an array called "names" to store your friends' names
+const names1 = ["Alice", "Bob", "Charlie", "David"];
+// Loop through the array and print each person's name
+for (const name of names1) {
+    console.log(name);
+}
+//12 greetings
+// Create an array called "names" to store your friends' names
+const names = ["Alice", "Bob", "Charlie", "David"];
+// Loop through the array and print a personalized message to each person
+for (const name of names) {
+    console.log(`Hello, ${name}! Have a great day.`);
+}
+// 13 your own Array
+// Create an array to store examples of transportation modes
+const transportationModes = ["Car", "Bicycle", "Train", "Bus", "Motorcycle"];
+// Print statements about each transportation mode
+for (const mode of transportationModes) {
+    console.log(`I like ${mode}s because they are efficient and eco-friendly.`);
+}
+// 14   guest list
+// Create an array to store the names of people to invite
+const invitees = ["Albert Einstein", "Marie Curie", "Leonardo da Vinci"];
+// Loop through the array and print an invitation message to each person
+for (const person of invitees) {
+    console.log(`Dear ${person},\nYou are cordially invited to dinner. Please join us for an evening of great food and conversation.\nSincerely,\n[Your Name]`);
+}
+//15 changing guest list
+// Create an array to store the names of people to invite
+const invitees1 = ["Albert Einstein", "Marie Curie", "Leonardo da Vinci"];
+// Remove the guest who can't make it
+const guestWhoCantMakeIt = "Marie Curie";
+const indexOfGuestWhoCantMakeIt = invitees1.indexOf(guestWhoCantMakeIt);
+if (indexOfGuestWhoCantMakeIt !== -1) {
+    invitees1.splice(indexOfGuestWhoCantMakeIt, 1);
+}
+// Add a new guest
+const newGuest = "Isaac Newton";
+invitees1.push(newGuest);
+// Loop through the updated array and print invitation messages
+for (const person of invitees1) {
+    console.log(`Dear ${person},\nYou are cordially invited to dinner. Please join us for an evening of great food and conversation.\nSincerely,\n[Your Name]`);
+}
+//16 more guests
+// Create an array to store the names of people to invite
+const invitees2 = ["Albert Einstein", "Marie Curie", "Leonardo da Vinci"];
+// Print the guest who can't make it
+const guestWhoCantMakeIt1 = "Marie Curie";
+console.log(`${guestWhoCantMakeIt1} can't make it to the dinner.`);
+// Remove the guest who can't make it
+const indexOfGuestWhoCantMakeIt1 = invitees.indexOf(guestWhoCantMakeIt1);
+if (indexOfGuestWhoCantMakeIt1 !== -1) {
+    invitees2.splice(indexOfGuestWhoCantMakeIt1, 1);
+}
+// Add a new guest
+const newGuest1 = "Isaac Newton";
+invitees2.push(newGuest1);
+// Invite additional guests
+const additionalGuests = ["Nikola Tesla", "Ada Lovelace", "Charles Darwin"];
+// Since you have a bigger table, invite three more guests
+const moreGuests = ["Galileo Galilei", "Marie Curie's clone", "Grace Hopper"];
+invitees2.push(...moreGuests);
+// Print a message about the bigger dinner table
+console.log("Good news! We found a bigger dinner table.");
+// Loop through the updated array and print invitation messages
+for (const person of invitees2) {
+    console.log(`Dear ${person},\nYou are cordially invited to dinner. Please join us for an evening of great food and conversation.\nSincerely,\n[Your Name]`);
+}
+// 17  Shrinking guest list
+// Create an array to store the names of people to invite
+const invitees3 = ["Albert Einstein", "Marie Curie", "Leonardo da Vinci", "Isaac Newton", "Nikola Tesla", "Ada Lovelace", "Charles Darwin", "Galileo Galilei", "Marie Curie's clone", "Grace Hopper"];
+// Print the guest who can't make it
+const guestWhoCantMakeIt2 = "Marie Curie";
+console.log(`${guestWhoCantMakeIt2} can't make it to the dinner.`);
+// Remove the guest who can't make it
+const indexOfGuestWhoCantMakeIt2 = invitees.indexOf(guestWhoCantMakeIt2);
+if (indexOfGuestWhoCantMakeIt !== -1) {
+    invitees3.splice(indexOfGuestWhoCantMakeIt2, 1);
+}
+// Print a message about the bigger dinner table
+console.log("Good news! We found a bigger dinner table.");
+// Check if we can only invite two people
+if (invitees3.length <= 2) {
+    console.log("Unfortunately, we can only invite two people for dinner.");
+}
+// Remove guests until only two names remain
+while (invitees3.length > 2) {
+    const removedGuest = invitees3.pop();
+    console.log(`Sorry ${removedGuest}, we can't invite you to dinner.`);
+}
+// Print invitations to the remaining two guests
+for (const person of invitees3) {
+    console.log(`Dear ${person},\nYou are still invited to dinner. Please join us for an evening of great food and conversation.\nSincerely,\n[Your Name]`);
+}
+// Remove the last two names from the list
+invitees3.splice(0, invitees3.length);
+// Print the empty list
+console.log("Remaining guests:", invitees3);
+// 18 seeing the world
+// Create an array of places to visit
+const placesToVisit = [
+    "Paris, France",
+    "Kyoto, Japan",
+    "New York City, USA",
+    "Machu Picchu, Peru",
+    "Santorini, Greece"
+];
+// Print the original order
+console.log("Original Order:");
+console.log(placesToVisit);
+// Print in alphabetical order (without modifying original)
+console.log("\nAlphabetical Order (without modifying original):");
+console.log([...placesToVisit].sort());
+// Verify original order is unchanged
+console.log("\nOriginal Order (still intact):");
+console.log(placesToVisit);
+// Print in reverse alphabetical order (without modifying original)
+console.log("\nReverse Alphabetical Order (without modifying original):");
+console.log([...placesToVisit].sort().reverse());
+// Verify original order is still unchanged
+console.log("\nOriginal Order (still intact):");
+console.log(placesToVisit);
+// Reverse the order of the list
+placesToVisit.reverse();
+console.log("\nReversed Order:");
+console.log(placesToVisit);
+// Reverse the order again to get back to the original order
+placesToVisit.reverse();
+console.log("\nBack to Original Order:");
+console.log(placesToVisit);
+// Sort in alphabetical order (modifies original)
+placesToVisit.sort();
+console.log("\nSorted in Alphabetical Order (modified original):");
+console.log(placesToVisit);
+// Sort in reverse alphabetical order (modifies original)
+placesToVisit.sort((a, b) => b.localeCompare(a));
+console.log("\nSorted in Reverse Alphabetical Order (modified original):");
+console.log(placesToVisit);
+// 19
+const invitees4 = ["Albert Einstein", "Marie Curie", "Leonardo da Vinci"];
+// Loop through the array and print an invitation message to each person
+for (const person of invitees4) {
+    console.log(`Dear ${person},\nYou are cordially invited to dinner. Please join us for an evening of great food and conversation.\nSincerely,\n[Your Name]`, "we are inviting 200 important people to the Dinner");
+}
+// 20 
+// Create an array of favorite cities
+const favoriteCities = ["New York", "Paris", "Tokyo", "London", "Sydney"];
+// Print the list of favorite cities
+console.log("My Favorite Cities:");
+for (const city of favoriteCities) {
+    console.log(city);
+}
+// Create an array of favorite books (represented as objects)
+const favoriteBooks = [
+    {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        genre: "Fiction"
+    },
+    {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        genre: "Classic"
+    },
+    {
+        title: "Harry Potter and the Sorcerer's Stone",
+        author: "J.K. Rowling",
+        genre: "Fantasy"
+    }
+];
+// Print information about the favorite books
+console.log("My Favorite Books:");
+for (const book of favoriteBooks) {
+    console.log(`Title: ${book.title}`);
+    console.log(`Author: ${book.author}`);
+    console.log(`Genre: ${book.genre}`);
+    console.log("------------------");
+}
